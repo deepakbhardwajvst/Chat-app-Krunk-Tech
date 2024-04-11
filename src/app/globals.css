@@ -1,11 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   scrollbar-color: white white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
   /* Change scrollbar and track color */
 }
 

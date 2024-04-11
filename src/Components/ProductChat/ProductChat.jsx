@@ -1,5 +1,4 @@
-
-import React from 'react';
+"use client"
 import { Box, Flex, Text, Image, HStack, VStack } from '@chakra-ui/react';
 import { FaChevronRight } from 'react-icons/fa'
 const ProductChat = ({ productName, productCount }) => {

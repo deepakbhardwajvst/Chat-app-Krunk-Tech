@@ -1,9 +1,11 @@
-import React from "react";
+"use client"
+
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import { Box } from "@chakra-ui/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Text } from "@chakra-ui/react";
+import React, { useState } from "react";
 const Tags = () => {
   const tags = [
     "Clutch",
@@ -16,7 +18,7 @@ const Tags = () => {
     "Multi Compartment",
   ];
 
-  const [selected, setSelected] = React.useState([]);
+  const [selected, setSelected] = useState([]);
 
   const isItemSelected = (tag) => !!selected.find((el) => el === tag);
 

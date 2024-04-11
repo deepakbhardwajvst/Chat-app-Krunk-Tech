@@ -1,4 +1,4 @@
-import React from "react";
+"use client"
 import {
   HStack,
   Avatar,
@@ -18,8 +18,8 @@ export default function Navbar() {
       alignItems="center"
       mb={4}
     >
-      <Avatar bg={"white"} src="./bot.png">
-        <AvatarBadge boxSize="0.80em" bg="#3FE225" />
+      <Avatar bg={"white"} src="/bot.png" height={35} borderRadius={99999}>
+        <AvatarBadge boxSize="0.80em" bg="#3FE225" borderRadius={99999} />
       </Avatar>
       <HStack w="100%">
         <Box d="flex" alignItems="center">

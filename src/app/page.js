@@ -1,4 +1,4 @@
-import Image from "next/image";
+"use client"
 import {
   Box,
   Center,
@@ -14,39 +14,39 @@ import Filters from "@/Components/Filters/Filters";
 import SendMessage from "@/Components/SendMessage/SendMessage";
 import ProductChat from "@/Components/ProductChat/ProductChat";
 import Tags from "@/Components/Tags/Tags";
-
+import { FaSlidersH } from "react-icons/fa";
 
 export default function Home() {
-    const messages = [
-      {
-        message:
-          "Hi Sam! I am your personal shopping assistant , how can i help you today ?",
-        timestamp: "4:45 PM",
-        isComponent: false,
-        from: "chatbot",
-      },
-      {
-        message: "I am looking for a hand bag, with long strap .",
-        timestamp: "4:46 PM",
-        isComponent: false,
-        from: "me",
-      },
-      {
-        isComponent: true,
-        componentHeader: "Popular tags for handbag",
-        component: <Tags />,
-      },
-      {
-        isComponent: true,
-        component: <ProductChat />,
-      },
-      {
-        isComponent: true,
-        componentHeader: "Select Filters",
-        component: <Filters />,
-        hasRightItem: true,
-      },
-    ];
+  const messages = [
+    {
+      message:
+        "Hi Sam! I am your personal shopping assistant , how can i help you today ?",
+      timestamp: "4:45 PM",
+      isComponent: false,
+      from: "chatbot",
+    },
+    {
+      message: "I am looking for a hand bag, with long strap .",
+      timestamp: "4:46 PM",
+      isComponent: false,
+      from: "me",
+    },
+    {
+      isComponent: true,
+      componentHeader: "Popular tags for handbag",
+      component: <Tags />,
+    },
+    {
+      isComponent: true,
+      component: <ProductChat />,
+    },
+    {
+      isComponent: true,
+      componentHeader: "Select Filters",
+      component: <Filters />,
+      hasRightItem: true,
+    },
+  ];
   return (
     <Box h="100vh" bg="gray.100">
       <Center h="100%">

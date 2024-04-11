@@ -73,7 +73,7 @@ export default function SendMessage() {
         >
           Krunk.ai
         </Text>
-        <Image mr={1} src="./krun.png" width={18} height={18} />
+        <Image mr={1} src="./krun.png" width={18} height={18} alt="image"/>
       </Text>
     </VStack>
   );

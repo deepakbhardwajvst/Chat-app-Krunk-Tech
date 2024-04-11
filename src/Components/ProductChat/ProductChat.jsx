@@ -31,7 +31,7 @@ const ProductChat = ({ productName, productCount }) => {
                     background="#FFFFFF"
                     borderRadius="10px"
                 >
-                    <Image  width="70px" height="50px" src="./bag.jpg" borderRadius="5px" ml={30} />
+                    <Image  width="70px" height="50px" src="./bag.jpg" borderRadius="5px" ml={30} alt='image'/>
                     <Flex flexDirection="column" alignItems="flex-start" padding="0px 5px" gap="7px">
                         <Flex flexDirection="row" justifyContent="center" alignItems="center" padding="0px" gap="5px">
                             <Box width="89px" height="20px" fontWeight="500" fontSize="13px" lineHeight="20px" color="#333333" whiteSpace={'nowrap'} mr={5}>Bags on Timpu</Box>

@@ -10,7 +10,8 @@ import {
 } from "@chakra-ui/react";
 import Navbar from "@/Components/Navbar/Navbar";
 import Conversation from "@/Components/Conversation/Conversation";
-Navbar
+import Filters from "@/Components/Filters/Filters";
+
 export default function Home() {
     const messages = [
       {

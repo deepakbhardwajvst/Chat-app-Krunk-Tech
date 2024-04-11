@@ -11,6 +11,10 @@ import {
 import Navbar from "@/Components/Navbar/Navbar";
 import Conversation from "@/Components/Conversation/Conversation";
 import Filters from "@/Components/Filters/Filters";
+import SendMessage from "@/Components/SendMessage/SendMessage";
+import ProductChat from "@/Components/ProductChat/ProductChat";
+import Tags from "@/Components/Tags/Tags";
+
 
 export default function Home() {
     const messages = [
@@ -47,7 +51,7 @@ export default function Home() {
     <Box h="100vh" bg="gray.100">
       <Center h="100%">
         <Box borderRadius={20} w="25%" p={2} bg="white" boxShadow="lg">
-          <Header />
+          <Navbar />
           <Box h="400px" overflowY="scroll" mb={4}>
             {messages.map((item, i) =>
               item.isComponent ? (

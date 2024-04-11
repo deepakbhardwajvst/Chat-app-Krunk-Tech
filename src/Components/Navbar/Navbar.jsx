@@ -19,7 +19,7 @@ export default function Navbar() {
       mb={4}
     >
       <Avatar bg={"white"} src="/bot.png" height={35} borderRadius={99999}>
-        <AvatarBadge boxSize="0.80em" bg="#3FE225" borderRadius={99999} />
+        <AvatarBadge boxSize="0.50em" bg="#3FE225" borderRadius={99999} />
       </Avatar>
       <HStack w="100%">
         <Box d="flex" alignItems="center" pl={10}>
@@ -28,9 +28,9 @@ export default function Navbar() {
               Timpu
             </Heading>
             <svg
-              width="16"
-              height="17"
-              viewBox="0 0 16 17"
+              width="13"
+              height="14"
+              viewBox="0 0 13 14"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -60,10 +60,10 @@ export default function Navbar() {
             border={"1px"}
             borderColor={"white"}
             borderRadius={"20px"}
-            boxSize="0.80em"
+            boxSize="0.60em"
             bg="#3FE225"
           />
-          <Text fontSize="sm" color="#4C82EF">
+          <Text fontSize={13} color="#4C82EF">
             Online
           </Text>
         </HStack>

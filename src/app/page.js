@@ -9,8 +9,39 @@ import {
   HStack,
 } from "@chakra-ui/react";
 import Navbar from "@/Components/Navbar/Navbar";
+import Conversation from "@/Components/Conversation/Conversation";
 Navbar
 export default function Home() {
+    const messages = [
+      {
+        message:
+          "Hi Sam! I am your personal shopping assistant , how can i help you today ?",
+        timestamp: "4:45 PM",
+        isComponent: false,
+        from: "chatbot",
+      },
+      {
+        message: "I am looking for a hand bag, with long strap .",
+        timestamp: "4:46 PM",
+        isComponent: false,
+        from: "me",
+      },
+      {
+        isComponent: true,
+        componentHeader: "Popular tags for handbag",
+        component: <Tags />,
+      },
+      {
+        isComponent: true,
+        component: <ProductMessage />,
+      },
+      {
+        isComponent: true,
+        componentHeader: "Select Filters",
+        component: <Filters />,
+        hasRightItem: true,
+      },
+    ];
   return (
     <Box h="100vh" bg="gray.100">
       <Center h="100%">
@@ -46,7 +77,7 @@ export default function Home() {
                   {item.component}
                 </div>
               ) : (
-                <ChatMessage
+                <Conversation
                   key={i}
                   message={item.message}
                   timestamp={item.timestamp}

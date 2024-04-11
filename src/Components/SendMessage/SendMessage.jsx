@@ -20,44 +20,60 @@ export default function SendMessage() {
       borderBottomRightRadius={"20px"}
       bg={"linear-gradient(to left, rgba(229,238,255,0.3), #E5EEFF)"}
     >
-      <HStack mt={1} p={2} d="flex" alignItems="flex-end">
-        <InputGroup>
+      <HStack mt={1} py={2} d="flex" alignItems="flex-end">
+        <InputGroup
+          backgroundColor={"white"}
+          display="flex"
+          justifyContent="space-around"
+          alignItems="center"
+          borderRadius={10}
+
+        >
           <Input
             size={"md"}
             p={3}
-            borderRadius={10}
             bg={"white"}
+            outline="none"
             placeholder="Type your message..."
           />
-          <InputRightElement>
-            <IconButton
-              aria-label="Attachment"
-              icon={<AttachmentIcon />}
-              variant="ghost"
-              colorScheme="gray"
-            />
-          </InputRightElement>
+
+          <IconButton
+            aria-label="Attachment"
+            icon={<AttachmentIcon />}
+            variant="ghost"
+            colorScheme="gray"
+          />
         </InputGroup>
         <IconButton
           bg={"#4C82EF"}
-          w={"90px"}
+         py={8}
+         px={20}
+         borderRadius={10}
+
+
           icon={<FaChevronRight />}
           colorScheme="blue"
         />
       </HStack>
       <Text
         pb={2}
-        fontSize="sm"
+        fontSize="13px"
         color="#B1B1B1"
         display="flex"
         alignItems="center"
         justifyContent={"center"}
       >
-        Powered by{" "}
-        <Text ml={1} as="span" fontWeight="bold">
+        Powered by
+        <Text
+          ml={1}
+          as="span"
+          fontWeight="bold"
+          color="#7A7F8C"
+          fontSize="13px"
+        >
           Krunk.ai
         </Text>
-        <Image mr={1} src="./krun.png" w={10} h={10} />
+        <Image mr={1} src="./krun.png" width={18} height={18} />
       </Text>
     </VStack>
   );

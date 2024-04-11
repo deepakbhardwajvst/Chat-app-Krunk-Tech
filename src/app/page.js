@@ -53,13 +53,13 @@ export default function Home() {
         <Box
           borderRadius={20}
           w="337px"
-          height={523}
+          height={653}
           p={2}
           bg="white"
           boxShadow="lg"
         >
           <Navbar />
-          <Box h="400px" overflowY="scroll" mb={4} px={10}>
+          <Box h="530px" overflowY="scroll" mb={4} px={10}>
             {messages.map((item, i) =>
               item.isComponent ? (
                 <div>

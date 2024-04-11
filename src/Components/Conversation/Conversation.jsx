@@ -6,7 +6,7 @@ const Conversation = ({ message, timestamp, fromWho }) => {
   const isMe = fromWho === "me";
 
   return (
-    <Flex w="100%" justifyContent={isMe ? "flex-end" : "flex-start"}>
+    <Flex w="100%" justifyContent={isMe ? "flex-end" : "flex-start"} mt={20}>
       <Flex
         flexDirection="column"
         alignItems={isMe ? "flex-end" : "flex-start"}
@@ -21,12 +21,13 @@ const Conversation = ({ message, timestamp, fromWho }) => {
               ? "#DCF7C5"
               : "linear-gradient(to left, rgba(229,238,255,0.3), #E5EEFF)"
           }
-          p={3}
+          p={10}
           textAlign={isMe ? "right" : "left"}
+          
         >
-          <Text size="sm">{message}</Text>
+          <Text fontSize={13}>{message}</Text>
         </Box>
-        <Text ml={2} mt={2} fontSize="12px" color="gray.700">
+        <Text ml={2} mt={2} fontSize="10px" color="gray.700" >
           {timestamp}
         </Text>
       </Flex>

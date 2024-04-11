@@ -50,9 +50,9 @@ export default function Home() {
   return (
     <Box h="100vh" bg="gray.100">
       <Center h="100%">
-        <Box borderRadius={20} w="25%" p={2} bg="white" boxShadow="lg">
+        <Box borderRadius={20} w="337px" height={523} p={2} bg="white" boxShadow="lg">
           <Navbar />
-          <Box h="400px" overflowY="scroll" mb={4}>
+          <Box h="400px" overflowY="scroll" mb={4} px={10}>
             {messages.map((item, i) =>
               item.isComponent ? (
                 <div>
@@ -65,6 +65,7 @@ export default function Home() {
                         fontWeight={400}
                         fontSize="13px"
                         color="#949494"
+                        mb={10}
                       >
                         {item.componentHeader}
                       </Text>

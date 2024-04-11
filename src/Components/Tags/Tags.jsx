@@ -92,14 +92,19 @@ const RightArrow = () => {
 const Tag = ({ tag, onClick, selected }) => {
   return (
     <Box
-      borderRadius="md"
-      p={2}
-      m={1}
+      borderRadius={5}
+      py={2}
+      my={1}
+      mx={4}
+      px={4}
       w={"max-content"}
       cursor="pointer"
       bg={"#F2F7FF"}
-      border={"2px"}
-      fontSize={"small"}
+      border={"1px solid"}
+     
+      fontSize={13}
+      
+      
       color={"#4C82EF"}
       fontWeight={600}
       borderColor={"#4C82EF"}

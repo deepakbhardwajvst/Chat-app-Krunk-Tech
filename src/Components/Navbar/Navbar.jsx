@@ -22,7 +22,7 @@ export default function Navbar() {
         <AvatarBadge boxSize="0.80em" bg="#3FE225" borderRadius={99999} />
       </Avatar>
       <HStack w="100%">
-        <Box d="flex" alignItems="center">
+        <Box d="flex" alignItems="center" pl={10}>
           <HStack spacing={0}>
             <Heading color={"#4C82EF"} size="md" mr={2}>
               Timpu

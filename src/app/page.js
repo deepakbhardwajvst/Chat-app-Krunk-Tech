@@ -33,7 +33,7 @@ export default function Home() {
       },
       {
         isComponent: true,
-        component: <ProductMessage />,
+        component: <ProductChat />,
       },
       {
         isComponent: true,

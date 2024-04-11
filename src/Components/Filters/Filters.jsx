@@ -29,6 +29,7 @@ export default function Filters() {
       gap="10px"
       width="100%"
       height="58px"
+      mb={20}
     >
       <Tag
         text="Strap - Long"
@@ -63,16 +64,21 @@ function Tag({ text, selected, onClick }) {
   return (
     <Flex
       backgroundColor={selected ? "#F6F9FF" : "#F4F4F4"}
-      borderRadius="md"
-      pl={2}
+      borderRadius="5px"
+      py={2}
+      px={10}
       h={"30px"}
+      display={"flex"}
+      gap={5}
       alignItems="center"
       border={selected ? "1px" : "none"}
       borderColor={selected ? "#4C82EF" : "transparent"}
       cursor="pointer"
+      color="#737373"
       onClick={onClick}
+      
     >
-      <Text color={selected ? "#4C82EF" : "black"} fontSize={"12px"}>
+      <Text color={selected ? "#4C82EF" : "#737373"} fontSize={"12px"}>
         {text}
       </Text>
       <IconButton
@@ -83,6 +89,7 @@ function Tag({ text, selected, onClick }) {
         ml={2}
         w={"5px"}
         variant="ghost"
+        color={selected ? "#4C82EF" : "#737373"}
         colorScheme="blackAlpha"
         display={selected ? "block" : "block"}
       />

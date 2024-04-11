@@ -50,7 +50,14 @@ export default function Home() {
   return (
     <Box h="100vh" bg="gray.100">
       <Center h="100%">
-        <Box borderRadius={20} w="337px" height={523} p={2} bg="white" boxShadow="lg">
+        <Box
+          borderRadius={20}
+          w="337px"
+          height={523}
+          p={2}
+          bg="white"
+          boxShadow="lg"
+        >
           <Navbar />
           <Box h="400px" overflowY="scroll" mb={4} px={10}>
             {messages.map((item, i) =>
@@ -61,11 +68,19 @@ export default function Home() {
                       <Text
                         ml={1}
                         letterSpacing={1}
-                        mt={2}
+                        mt={
+                          item.componentHeader === "Select Filters"
+                            ? "0px"
+                            : "2px"
+                        }
                         fontWeight={400}
                         fontSize="13px"
                         color="#949494"
-                        mb={10}
+                        mb={
+                          item.componentHeader === "Select Filters"
+                            ? "0px"
+                            : "10px"
+                        }
                       >
                         {item.componentHeader}
                       </Text>

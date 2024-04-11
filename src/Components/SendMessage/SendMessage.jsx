@@ -30,6 +30,8 @@ export default function SendMessage() {
 
         >
           <Input
+          id="message"
+          name="message"
             size={"md"}
             p={3}
             bg={"white"}

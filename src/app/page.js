@@ -62,7 +62,7 @@ export default function Home() {
           <Box h="530px" overflowY="scroll" mb={4} px={10}>
             {messages.map((item, i) =>
               item.isComponent ? (
-                <div>
+                <div key={i}> 
                   {item.componentHeader ? (
                     <HStack justifyContent={"space-between"}>
                       <Text

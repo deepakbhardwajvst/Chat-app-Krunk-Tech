@@ -1,2 +1,2 @@
 
-![Image Alt Text](/public/image-name.png)
+![Image Alt Text](/public/Screenshot.png)
